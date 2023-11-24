@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
     public static int[] generateRandomArray() {
@@ -67,4 +68,12 @@ public class Main {
         System.out.println( );
     }
 
+    static public void task4() {
+        System.out.println("Задача №4");
+        char[] Name = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = Name.length -1; i >=0 ; i--) {
+            System.out.print(Name[i]);
+
+        }
+    }
 }
