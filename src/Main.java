@@ -34,15 +34,15 @@ public class Main {
 
         System.out.println("Задача 2");
 
-        int maxsum = -1;
-        int minsum = 200_001;
         int [] arr = generateRandomArray();
-        for (int element : arr) {
-            if (element > maxsum) {
-                maxsum = element;
-            }
-            if (element < minsum) {
-                minsum = element;
+        int minsum = arr[0];
+        int maxsum = arr[0];
+        for (int item:arr) {
+            if (item > maxsum) {
+                maxsum = item;
+                if (item < minsum) {
+                    minsum = item;
+                }
             }
         }
         System.out.println("Минимальная сумма трат за день составила "+ minsum + " рублей");
